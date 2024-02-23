@@ -1,0 +1,6 @@
+#ifndef MODULESSHAVLIENKOV_H_INCLUDED
+#define MODULESSHAVLIENKOV_H_INCLUDED
+
+float s_calculation(int x, int y, int z);
+
+#endif // MODULESSHAVLIENKOV_H_INCLUDED
