@@ -102,4 +102,6 @@ void addStudent(Student student) {
            << student.marital_status << " " << student.place_of_residence << " " << student.faculty << " "
            << student.specialty << " " << student.specialization << "\n";
     output.close();
+
+    cout << "Дані студента успішно записані" << endl;
 }
