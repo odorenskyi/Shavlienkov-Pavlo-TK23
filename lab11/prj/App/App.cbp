@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ANSI" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="App" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/App" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../ModulesShavlienkov" />
+					<Add directory="../ModulesSytenkova" />
+					<Add directory="../ModulesMakodzeba" />
+				</Compiler>
+				<Linker>
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add library="../Libs/libModulesShavlienkov.a" />
+					<Add library="../Libs/libModulesSytenkova.a" />
+					<Add library="../Libs/libModulesMakodzeba.a" />
+					<Add directory="../ModulesShavlienkov" />
+					<Add directory="../ModulesSytenkova" />
+					<Add directory="../ModulesMakodzeba" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/App" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../ModulesShavlienkov" />
+		</Compiler>
+		<Linker>
+			<Add directory="../ModulesShavlienkov" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
